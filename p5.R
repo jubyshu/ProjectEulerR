@@ -6,7 +6,7 @@ is_prime <- function(num) {
     return(TRUE)
   }
   for (n in seq(2, num - 1)) {
-    if (num %% n != 0) {
+    if (num %% n == 0) {
       return(FALSE)
     }
   }
